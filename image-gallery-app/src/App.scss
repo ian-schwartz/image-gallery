@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans&display=swap");
+
+body {
+  background-color: #252d40;
+}
+
+.jumbotron {
+  background-color: #353c51;
+
+  .title {
+    font-family: "Bubblegum Sans", cursive;
+    color: #dffaf1;
+    font-size: 4rem;
+  }
+}
