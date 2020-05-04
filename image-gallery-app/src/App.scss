@@ -14,3 +14,8 @@ body {
     font-size: 4rem;
   }
 }
+
+.card-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
