@@ -3,10 +3,10 @@ import { Container, CardGroup, Card, Button } from "react-bootstrap";
 
 const ImageCard = ({ image }) => {
   return (
-    <Container>
+    <Container className="container">
       <CardGroup>
         <Card style={{ margin: "25px" }} bg="dark" text="light">
-          <Card.Img variant="top" src={image.urls.regular} />
+          <Card.Img variant="top" src={image.urls.regular} alt={image.alt_description} />
           <Card.Body>
             <Card.Title>{image.description}</Card.Title>
             <Card.Text>Photo by {image.user.name}</Card.Text>
