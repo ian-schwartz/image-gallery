@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        `https://api.unsplash.com/photos/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
+        `https://api.unsplash.com/photos/?per_page=30&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`
       )
       .then((res) => {
         const photos = res.data;

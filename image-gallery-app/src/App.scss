@@ -19,3 +19,21 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
+
+.container {
+  width: 33%;
+}
+
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet) {
+  .container {
+    width: 49%;
+  }
+}
+
+$breakpoint-mobile-large: 568px;
+@media (max-width: $breakpoint-mobile-large) {
+  .container {
+    width: 100%;
+  }
+}
