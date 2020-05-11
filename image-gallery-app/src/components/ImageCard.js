@@ -6,7 +6,11 @@ const ImageCard = ({ image }) => {
     <Container className="container">
       <CardGroup>
         <Card style={{ margin: "25px" }} bg="dark" text="light">
-          <Card.Img variant="top" src={image.urls.regular} alt={image.alt_description} />
+          <Card.Img
+            variant="top"
+            src={image.urls.regular}
+            alt={image.alt_description}
+          />
           <Card.Body>
             <Card.Title>{image.description}</Card.Title>
             <Card.Text>Photo by {image.user.name}</Card.Text>

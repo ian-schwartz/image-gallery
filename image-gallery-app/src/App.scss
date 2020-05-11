@@ -24,6 +24,16 @@ body {
   width: 33%;
 }
 
+.loading-text {
+  color: #dffaf1;
+  text-align: center;
+}
+
+.search-button {
+  height: 5%;
+  margin: 0 0 1% 1%;
+}
+
 $breakpoint-tablet: 1024px;
 @media (max-width: $breakpoint-tablet) {
   .container {
