@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
 body {
   background-color: #252d40;
@@ -9,8 +9,8 @@ body {
   background-color: #353c51;
 
   .title {
-    font-family: "Bubblegum Sans", cursive;
-    color: #dffaf1;
+    font-family: 'Poppins', sans-serif;
+    color: #f8f9fa;
     font-size: 4rem;
   }
 }
@@ -27,6 +27,17 @@ body {
 .loading-text {
   color: #dffaf1;
   text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .search-button {

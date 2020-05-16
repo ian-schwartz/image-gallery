@@ -1,10 +1,11 @@
 import React from "react";
+import { Jumbotron } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <div className="jumbotron text-center">
-      <h1 className="title">Unsplash Image Gallery</h1>
-    </div>
+    <Jumbotron style={{ textAlign: "center" }}>
+      <h1 className="title">4K Image Gallery</h1>
+    </Jumbotron>
   );
 };
 
