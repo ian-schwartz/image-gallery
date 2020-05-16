@@ -5,7 +5,7 @@ const ImageCard = ({ image }) => {
   return (
     <Container className="container">
       <CardGroup>
-        <Card style={{ margin: "25px" }} bg="dark" text="light">
+        <Card style={{ margin: "25px", fontFamily: 'Roboto' }} bg="dark" text="light">
           <Card.Img
             variant="top"
             src={image.urls.regular}
