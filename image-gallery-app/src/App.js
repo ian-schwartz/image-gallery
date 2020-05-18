@@ -40,7 +40,7 @@ function App() {
       />
       <Pagination page={page} setPage={setPage} />
       <div>
-        {!isLoading && term !== "" && searchImages.length === 0 && (
+        {term !== "" && searchImages.length === 0 && (
           <h1 className="not-found-text">No Images Found</h1>
         )}
 
