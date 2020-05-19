@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+$text-color: #f8f9fa;
 
 body {
   background-color: #252d40;
@@ -10,7 +11,7 @@ body {
 
   .title {
     font-family: 'Poppins', sans-serif;
-    color: #f8f9fa;
+    color: $text-color;
     font-size: 4rem;
   }
 }
@@ -25,7 +26,7 @@ body {
 }
 
 .not-found-text {
-  color: #f8f9fa;
+  color: $text-color;
   text-align: center;
   font-size: 2.5rem;
   margin-top: 3%;
