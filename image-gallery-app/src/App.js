@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { HashLoader } from "react-spinners";
+import axios from "axios";
 import Header from "./components/Header";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
 import Pagination from "./components/Pagination";
-import axios from "axios";
-import { HashLoader } from "react-spinners";
 
 function App() {
   const [images, setImages] = useState([]);
@@ -23,8 +23,7 @@ function App() {
       .then((res) => {
         term === "" ? setImages(res.data) : setSearchImages(res.data.results);
         setIsLoading(false);
-        // console.log("Photos", res.data);
-        // console.log("Search Photos", res.data.results);
+        // console.log("Photos", res.data, "Search Photos", res.data.results);
       })
       .catch((err) => console.log("The data was not returned", err));
   }, [term, page]);
@@ -40,7 +39,7 @@ function App() {
       />
       <Pagination page={page} setPage={setPage} />
       <div>
-        {term !== "" && searchImages.length === 0 && (
+        {!isLoading && term !== "" && searchImages.length === 0 && (
           <h1 className="not-found-text">No Images Found</h1>
         )}
 
