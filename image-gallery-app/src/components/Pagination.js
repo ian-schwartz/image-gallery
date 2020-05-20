@@ -14,7 +14,7 @@ const Pagination = ({ page, setPage }) => {
     <div className="pagination">
       <Button
         variant="light"
-        size="lg"
+        size="md"
         style={{ margin: "1%" }}
         onClick={() => prevPage()}
       >
@@ -22,7 +22,7 @@ const Pagination = ({ page, setPage }) => {
       </Button>
       <Button
         variant="light"
-        size="lg"
+        size="md"
         style={{ margin: "1%" }}
         onClick={() => nextPage()}
       >
