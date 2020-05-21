@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
-const ImageSearch = ({ setTerm, setPage }) => {
+const ImageSearch = ({ setTerm, setPage, setIsLoading }) => {
   const [text, setText] = useState("");
 
   const handleChange = (e) => {
@@ -10,6 +10,7 @@ const ImageSearch = ({ setTerm, setPage }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true)
     searchText(text);
     setPage(1);
   };
