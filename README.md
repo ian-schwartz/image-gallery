@@ -6,11 +6,10 @@
 
 # Overview 
 
-This image gallery utilizes the Unsplash API to allow the user to search and browse photos. It is a fully responsive application that aims to support accessibility.
+This image gallery utilizes the Unsplash API to allow the user to search and browse high resolution photos. It is a fully responsive application that aims to support accessibility.
 
-<strong>Front End Deployment: https://4kimagegallery.netlify.app/ <br/>
-  Unsplash API: https://unsplash.com/developers
-</strong>
+Front End Deployment: https://4kimagegallery.netlify.app/ <br/>
+Unsplash API: https://unsplash.com/developers
 
  # Tech
 
