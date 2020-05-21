@@ -14,7 +14,7 @@ const ImageCard = ({ image }) => {
           <Card.Body>
             <Card.Title>{image.description}</Card.Title>
             <Card.Text>Photo by {image.user.name}</Card.Text>
-            <Button variant="secondary" href={image.links.html}>
+            <Button variant="secondary" target="_blank" href={image.links.html}>
               See on Unsplash
             </Button>
           </Card.Body>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 import axios from "axios";
 import Header from "./components/Header";
 import ImageCard from "./components/ImageCard";
@@ -37,6 +37,7 @@ function App() {
         setPage={setPage}
         term={term}
         setTerm={setTerm}
+        setIsLoading={setIsLoading}
       />
       <Pagination page={page} setPage={setPage} />
       <ScrollArrow />
@@ -47,7 +48,7 @@ function App() {
 
         {isLoading ? (
           <div className="spinner">
-            <HashLoader color={"#f2f2f2"} loading={isLoading} size={175} />
+            <ClipLoader color={"#f2f2f2"} loading={isLoading} size={175} />
           </div>
         ) : term === "" ? (
           <div className="card-wrap">
