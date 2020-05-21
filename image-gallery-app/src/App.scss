@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap");
 $text-color: #f8f9fa;
 
 body {
@@ -10,7 +10,7 @@ body {
   background-color: #353c51;
 
   .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: $text-color;
     font-size: 3.5rem;
   }
@@ -19,6 +19,7 @@ body {
 .card-wrap {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 5%;
 }
 
 .container {
@@ -48,6 +49,34 @@ body {
   margin: 0 0 1% 1%;
 }
 
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 1%;
+  height: 5%;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.6s;
+  transition: opacity 0.4s;
+  opacity: 0.6;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
 $breakpoint-tablet: 1024px;
 @media (max-width: $breakpoint-tablet) {
   .container {
@@ -71,5 +100,8 @@ $breakpoint-mobile-large: 568px;
   }
   .not-found-text {
     font-size: 1.55rem;
+  }
+  .card-wrap {
+    margin-bottom: 10%;
   }
 }

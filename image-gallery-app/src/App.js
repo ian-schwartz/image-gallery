@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
 import Pagination from "./components/Pagination";
+import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
   const [images, setImages] = useState([]);
@@ -38,6 +39,7 @@ function App() {
         setTerm={setTerm}
       />
       <Pagination page={page} setPage={setPage} />
+      <ScrollArrow />
       <div>
         {!isLoading && term !== "" && searchImages.length === 0 && (
           <h1 className="not-found-text">No Images Found</h1>
