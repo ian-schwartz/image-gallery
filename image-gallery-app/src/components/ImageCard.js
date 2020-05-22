@@ -5,7 +5,11 @@ const ImageCard = ({ image }) => {
   return (
     <Container className="container">
       <CardGroup>
-        <Card style={{ margin: "25px", fontFamily: 'Roboto' }} bg="dark" text="light">
+        <Card
+          style={{ margin: "25px", fontFamily: "Roboto" }}
+          bg="dark"
+          text="light"
+        >
           <Card.Img
             variant="top"
             src={image.urls.regular}
@@ -13,7 +17,16 @@ const ImageCard = ({ image }) => {
           />
           <Card.Body>
             <Card.Title>{image.description}</Card.Title>
-            <Card.Text>Photo by {image.user.name}</Card.Text>
+            <Card.Text>
+              Photo by{" "}
+              <a
+                href={image.user.portfolio_url}
+                style={{ color: "#f8f9fa" }}
+                target="_blank"
+              >
+                {image.user.name}
+              </a>
+            </Card.Text>
             <Button variant="secondary" target="_blank" href={image.links.html}>
               See on Unsplash
             </Button>
