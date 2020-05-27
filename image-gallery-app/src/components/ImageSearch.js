@@ -10,7 +10,7 @@ const ImageSearch = ({ setTerm, setPage, setIsLoading }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsLoading(true)
+    setIsLoading(true);
     searchText(text);
     setPage(1);
   };

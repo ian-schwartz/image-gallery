@@ -23,11 +23,17 @@ const ImageCard = ({ image }) => {
                 href={image.user.portfolio_url}
                 style={{ color: "#f8f9fa" }}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {image.user.name}
               </a>
             </Card.Text>
-            <Button variant="secondary" target="_blank" href={image.links.html}>
+            <Button
+              variant="secondary"
+              href={image.links.html}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               See on Unsplash
             </Button>
           </Card.Body>
