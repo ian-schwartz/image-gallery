@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b86bf93b-6236-484f-a072-e153351b4e1e/deploy-status)](https://app.netlify.com/sites/4kimagegallery/deploys)
 
-<div align="center"><img src="image-gallery-app/src/assets/image-gallery-screenshot.png" /></div>
+<div align="center"><img src="image-gallery-app/src/assets/4k-image-gallery-screenshot.png" /></div>
 
 # Overview 
 
